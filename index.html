@@ -1,78 +1,18 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
- <meta name="generator" content="InstantBlueprint.com - Create a web project framework in seconds." />
- <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-  <title>REorganize</title>
- <meta name="description" content="REOrganize is a quick Javascript application written by Amber Feng to help make the task of reorganizing/arranging furniture in your room easier." />
- <meta name="keywords" content="reorganize, jquery, javascript, furniture, arrange, widget" />
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
-  <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-  <link href=' http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Nobile' rel='stylesheet' type='text/css'>
-
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery-ui-1.8.2.custom.min.js"></script>
   <script type="text/javascript" src="js/application.js"></script>
   <script type="text/javascript">
-
-  	var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-17135760-5']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
   </script>
-  
 </head>
 <body>
 <!-- Start: Center Wrap -->
 <div id="wrapper">
-<div id='header'><h1>REorganize.</h1></div>
 <div style='margin:auto'>
-	<div id='toolbar'>
-		<div id='blurb' class='add-widget'>
-			<p>With REOrganize, you can easily simulate arranging your furniture in your room to figure out what works best.</p>
-			<p>Just quickly measure the room and dimensions of your furniture (bed, desk), add them on the simulator, and drag/rotate away!</p>
-		</div>
-		<div id='create-room' class='add-widget'>
-			<h2>Edit Room</h2>
-			<p>*This will destroy the current room</p>
-			<p id='room-error' class='error'></p>
-			<p>Height <input id='room-height' type="text">"</p>
-			<p>Width <input id='room-width' type="text">"</p>
-			<p><input id='room-submit' type="submit" value="Update" /></p>
-		</div>
-		<div id='create-door' class='add-widget'>
-			<h2>Add Door/Closet</h2>
-			<p id='door-error' class='error'></p>
-			<p>Which wall?
-			<select id='door-select'>
-			  <option value="top">Top</option>
-			  <option value="left">Left</option>
-			  <option value="right">Right</option>
-			  <option value="bottom">Bottom</option>
-			</select></p>
-			<p>Length <input id='door-size' type="text">"</p>
-			<p><input id='door-submit' type="submit" value="Add" /></p>
-		</div>
-		<div id='create-rect' class='add-widget'>
-			<h2>Add Rectangle (beds, desks, etc.)</h2>
-			<p id='rect-error' class='error'></p>
-			<p>Height <input id='rect-height' type="text">"</p>
-			<p>Width <input id='rect-width' type="text">"</p>
-			<p><input id='rect-submit' type="submit" value="Add" /></p>
-		</div>
-	</div>
-
-	<div id='canvas'></div>
-	<div class='clear'></div>
+	<div id='canvas'></canvas>
+  <div class='clear'></div>
 </div>
-<div id='footer'>&#169; 2010 Created By <a href='http://www.amberfeng.com'>Amber Feng</a></div>
 </div><!-- End: Center Wrap -->
  </body>
 </html>
