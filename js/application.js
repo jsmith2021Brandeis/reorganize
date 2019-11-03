@@ -15,8 +15,8 @@ $(function(){
 
 
 	//draw furniture around room
-	drawImage(offset+60,offset+30,tableWidth,tableLength,"images/Table.jpeg",ctx);
-	chairPath="images/Chair.jpeg";
+	drawImage(offset+tableWidth/8,offset+tableLength/8,tableWidth,tableLength,"images/TableSide.jpg",ctx);
+	chairPath="images/ChairSide.jpg";
 	chairLength=50
 	chairWidth=50
 	//top chair going clockwise
